@@ -1,0 +1,63 @@
+<!-- ======================= form.html ======================= -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Urlaubsantrag Formular</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+    }
+
+    .header {
+      background: #0066cc;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .form-container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">Urlaubsantrag</div>
+
+  <div class="form-container">
+    <iframe data-tally-src="https://tally.so/embed/5Be5pb?alignLeft=1&dynamicHeight=1"
+      loading="lazy" width="100%" height="144" frameborder="0" marginheight="0"
+      marginwidth="0" title="Urlaubsantrag"></iframe>
+
+    <script>
+      var d=document,w="https://tally.so/widgets/embed.js",v=function(){
+        "undefined"!=typeof Tally?Tally.loadEmbeds():
+        d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((e)=>{
+          e.src=e.dataset.tallySrc
+        });
+      };
+      if("undefined"!=typeof Tally) v();
+      else if(d.querySelector('script[src="'+w+'"]')==null){
+        var s=d.createElement("script");
+        s.src=w; s.onload=v; s.onerror=v;
+        d.body.appendChild(s);
+      }
+    </script>
+  </div>
+
+</body>
+</html>
